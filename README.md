@@ -7,3 +7,17 @@ The primary purpose of this analysis was to recalculate the math and reading sco
 
 **Results of Analysis**
 
+*Effects on District Summary*
+  
+ After rerunning the district summary with new edits, no drastic changes were observed. 
+ When looking at the top five schools, they remained the same in both the originial and new analysis reports. 
+
+# Sort and show top five schools (original)
+
+top_schools = per_school_summary_df.sort_values(["% Overall Passing"], ascending=False)
+                                                 
+top_schools.head()    
+
+# Sort and show top five schools.(new)
+top_schools = per_school_summary_df.sort_values(["% Overall Passing"], ascending=False)
+top_schools.head()
